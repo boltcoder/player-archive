@@ -1,5 +1,5 @@
 import { Provider } from 'react-redux';
-import store from './configureStore';
+import store from 'appRedux/configureStore';
 const App = () => {
   return <Provider store={store}></Provider>
 }

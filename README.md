@@ -64,9 +64,19 @@ The feature requested may be straightforward, but my goal is to project this fea
 
 ## Frontend Architecture
 
-**From Root to to a page route:**
+
+**From Root Node to a Page's Container Component:**
 <img src="./readmeAssets/FA-1.png?raw=true" alt="preview" width="500"/>
 
 
-**Directory Structure**
+**Directory Structure using Ducks**
+
 <img src="./readmeAssets/FA-2.png?raw=true" alt="preview" />
+
+
+
+
+## Backend Architecture
+
+**Directory Structure**
+<img src="./readmeAssets/BE-1.png?raw=true" alt="preview" />

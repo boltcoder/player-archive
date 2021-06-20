@@ -1,12 +1,11 @@
 # Player Archive!
 
-<img src="./readmeAssets/preview.png?raw=true" alt="preview" width="300"/>
+<img src="./readmeAssets/preview.png?raw=true" alt="preview" width="400"/>
+<img src="./readmeAssets/preview-2?raw=true" alt="preview" width="400"/>
+<img src="./readmeAssets/preview-mobile?raw=true" alt="preview" width="400"/>
+<img src="./readmeAssets/preview-tablet?raw=true" alt="preview" width="400"/>
+<img src="./readmeAssets/preview-5?raw=true" alt="preview" width="400"/>
 
-![Preview 1](./readmeAssets/preview.png?raw=true)
-![Preview 2](./readmeAssets/preview-2.png?raw=true)
-![Preview 3](./readmeAssets/preview-mobile.png?raw=true)
-![Preview 4](./readmeAssets/preview-tablet.png?raw=true)
-![Preview 5](./readmeAssets/preview-5.png?raw=true)
 
 
 ## Note For Reviewer 🙏🏻

@@ -1,12 +1,18 @@
-import { Provider } from 'react-redux';
-import store from 'appRedux/configureStore';
+import ReduxProvider from "appSmartComponents/ReduxProvider";
+import MUIProvider from "appSmartComponents/MUIProvider";
+
+
 import Container from 'appContainers';
+
 
 const App = () => {
   return (
-    <Provider store={store}>
+    <ReduxProvider>
+    <MUIProvider>
       <Container></Container>
-    </Provider>
+    
+    </MUIProvider>
+    </ReduxProvider>
   );
 }
 

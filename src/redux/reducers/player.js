@@ -1,4 +1,5 @@
 import { handleActions } from 'redux-actions';
+import PlayerModel from 'appModels/Player';
 import produce from 'immer';
 import { 
   FETCH_PLAYER
@@ -16,7 +17,7 @@ const player = handleActions({
         id
       } = player;
       return produce(state, (draftState)=>{
-        draftState.dictionary[id] = player;
+        draftState.dictionary[id] = new PlayerModel(player);
       })
     },
     throw: (state, action)=>{

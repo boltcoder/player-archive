@@ -1,0 +1,11 @@
+{
+  "id": "terry",
+  "name": "John Terry",
+  "age": 40,
+  "role": "Defender",
+  "team": "Chelsea",
+  "goals": 41,
+  "games": 492,
+  "location": "England",
+  "red_cards": 6
+}

@@ -1,0 +1,22 @@
+{
+  "ronaldo": {
+    "id": "ronaldo",
+    "active": true,
+    "player_id": "player-1"
+  },
+  "messi": {
+    "id": "messi",
+    "active": true,
+    "player_id": "player-2"
+  },
+  "lampard": {
+    "id": "lampard",
+    "active": true,
+    "player_id": "player-3"
+  },
+  "terry": {
+    "id": "terry",
+    "active": false,
+    "player_id": "player-4"
+  }
+}

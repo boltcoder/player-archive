@@ -1,0 +1,1 @@
+export const getActiveTheme = (state) => state.user.themeType;

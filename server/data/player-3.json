@@ -1,0 +1,11 @@
+{
+  "id": "lampard",
+  "name": "Frank Lampard",
+  "age": 43,
+  "role": "Mid Fielder",
+  "team": "Chelsea",
+  "goals": 177,
+  "games": 609,
+  "location": "England",
+  "red_cards": 2
+}

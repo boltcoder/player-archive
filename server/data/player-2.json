@@ -1,0 +1,11 @@
+{
+  "id": "messi",
+  "name": "Lionel Messi",
+  "age": 33,
+  "role": "Forward",
+  "team": "FC Barcelona",
+  "goals": 745,
+  "games": 924,
+  "location": "Argentina",
+  "red_cards": 3
+}

@@ -72,9 +72,13 @@ function getWebpackAliases(options = {}) {
       appSmartComponents: `${paths.appSrc}/smartComponents`,
       appPresentationComponents: `${paths.appSrc}/presentationComponents`,
       appAssets: `${paths.appSrc}/assets`,
+      appSelectors: `${paths.appSrc}/selectors`,
+      appModels: `${paths.appSrc}/models`,
       appUtils: `${paths.appSrc}/utils`,
       appConstants: `${paths.appSrc}/constants`,
       appContainers: `${paths.appSrc}/containers`,
+      appHooks: `${paths.appSrc}/hooks`,
+      appConfig: `${paths.appSrc}/config`,
     };
   }
 }

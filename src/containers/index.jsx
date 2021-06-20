@@ -1,13 +1,11 @@
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import { fetchPlayer } from 'appActions/player';
-
+import Layout from 'appSmartComponents/Layout'
+import PlayerArchive from 'appContainers/PlayerArchive';
 const Container = () => {
-  const dispatch = useDispatch();
-  useEffect(()=>{
-    dispatch(fetchPlayer());
-  });
-  return <div>shit</div>;
+  return (
+    <Layout>
+      <PlayerArchive />
+    </Layout>
+  );
 }
 Container.displayName = 'Container';
 export default Container;

@@ -1,1 +1,2 @@
 export const FETCH_PLAYER = "FETCH_PLAYER";
+export const CHANGE_THEME = "CHANGE_THEME";

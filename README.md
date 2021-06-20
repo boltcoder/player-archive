@@ -62,4 +62,5 @@ The feature requested may be straightforward, but my goal is to project this fea
  - **Just JSON Files for persistence layer**: Well, I could go all the way with PSQL/MongoDB etc, but should I? Please let me know.
 
 ## Frontend Architecture
+<img src="./readmeAssets/FA-1.png?raw=true" alt="preview" width="500"/>
 

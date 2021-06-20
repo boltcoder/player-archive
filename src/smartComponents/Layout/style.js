@@ -11,6 +11,7 @@ export default (theme)=> ({
     width: '100%',
     [theme.breakpoints.between('xs','sm')]: {
       padding: theme.spacing(4),
+      fontSize: 10,
     }
   }
 });

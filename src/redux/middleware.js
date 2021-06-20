@@ -32,7 +32,7 @@ const promiseMiddleware = (store) => {
            // For unexpected errors like (no network etc) which are not gracefully sent by backend just show an alert for now.
            // in real life, we can dispatch a redux action from in here and open modal and show error in that modal.
            if(unexpected) {
-              alert("Please check your internet connection. PS: I could've used a UI modal for this");
+              alert("Trouble connecting with server. Please check your internet connection. PS: I could've used a UI modal for this");
            }
 
           // if it was expected or unexpected error the reducers should know

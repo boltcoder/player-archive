@@ -77,6 +77,9 @@
     "workbox-webpack-plugin": "5.1.4"
   },
   "scripts": {
+    "frontend" : "npm run start",
+    "backend": "node server/index.js",
+    "fullstack": "concurrently --kill-others \"npm run frontend\" \"npm run backend\"",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -159,6 +162,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
     "compression": "^1.7.4",
+    "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-status": "^1.5.0",

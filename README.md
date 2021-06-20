@@ -1,7 +1,7 @@
 # Player Archive!
 
 
-[](./readmeAssets/preview.png)
+[Preview 1](./readmeAssets/preview.png)
 
 
 ## Note For Reviewer 🙏🏻

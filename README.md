@@ -2,6 +2,10 @@
 
 
 ![Preview 1](./readmeAssets/preview.png?raw=true)
+![Preview 2](./readmeAssets/preview-2.png?raw=true)
+![Preview 3](./readmeAssets/preview-mobile.png?raw=true)
+![Preview 4](./readmeAssets/preview-tablet.png?raw=true)
+![Preview 5](./readmeAssets/preview-5.png?raw=true)
 
 
 ## Note For Reviewer 🙏🏻

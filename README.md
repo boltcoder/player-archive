@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Player Archive!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Note For Reviewer 🙏🏻
 
-### `yarn start`
+The frontend application has been engineered to mimic code design and architecture of a production scale app. 
+The feature requested may be straightforward, but my goal is to project this feature as a slice of a larger application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features 📝
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - A Search Input to search for Players stored in archive by their ID and only show **active** players, using two APIs
+	 - `/player/data/:playerId` - to check if it's active/inactive.
+	 - `/player/profile/:playerId` - to get full data.
+	 
+ - Mobile + Tablet Responsive + Highly Modular Frontend.
+ - Lean NodeJS backend to serve the json data.
+ - Unit Tests.
+ - Bonus Features: 
+	 - Dark Mode Support 🌙🌚 
+	 - `stale-while-revalidate` data fetching
 
-### `yarn test`
+## How to run the application(s)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ - Please use node `v12.19.0` and npm `v6.14.8`. I could have shipped a docker image but ... ☕.
+ - Clone the repo of course 😉
+ - `npm i` 
+ - `npm run fullstack` to fire off both frontend and backend concurrently. (I used `concurrently` npm package).
+ - Alternatively 💅, `npm run frontend` for frontend and `npm run backend` for backend.
+ - **Frontend** : `http://localhost:3000` 
+ - **Backend** : `http://localhost:3001` 
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Frontend TechStack
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+ - **React** : Setup using an `ejected` Create React Application to have more control over webpack. I have only added `aliases` for better path management as of now.
+ - **React-Redux**, State Management Library : The feature could easily be implemented without a state management library, but as mentioned above, the goal is to project the feature as a slice of a larger application.
+ - **Material-UI**: For CSS-In-JS, Theme management, Responsiveness, and Re-usable UI Components. **Note**: Except for *TextField* Search Input, rest of the UI components have been developed in this application. A larger application always uses a design system underneath and every design system (bootstrap, ANT, Material-ui etc)  has helper libraries to manage boilerplate. I've documented under-the-hood implementations of these helper utils as a means to communicate I'm well aware of these concepts but just not reinventing the wheel at the moment. 
+ -  **Axios**: For ajax
+ - **Reselect**: Selector Library for memoization.
+ - **babel/plugin-proposal-export-default-from**: For `export x from 'y';`
+ -  **babel/plugin-proposal-async-generator-functions**: For `async await` in older browsers.
+ - **React Testing Library + Jest**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Backend TechStack
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ - **Express + NodeJS**: The most common NodeJS REST framework.
+	 - `compression`: For on-the-fly gzip compression.
+	 - `cors`: For Allowed-Origin-Access-Control as *.
+	 - `http-status`: For All HTTP Status Constants 
+ - **Winston**:  For logging purposes. Currently only logging on Console but can use any other Transport mechanism in a larger application. (LogStash perhaps 😉)
+ - **Just JSON Files for persistence layer**: Well, I could go all the way with PSQL/MongoDB etc, but should I? Please let me know.
 
-## Learn More
+## Frontend Architecture
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

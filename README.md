@@ -1,6 +1,7 @@
 # Player Archive!
 
-[Sneak Peak](./readmeAssets)
+
+[](./readmeAssets/preview.png)
 
 
 ## Note For Reviewer 🙏🏻

@@ -4,7 +4,7 @@ import {
 } from '@material-ui/icons'
 import THEME_TYPES from 'appConstants/themeTypes';
 import { useDispatch, useSelector } from 'react-redux';
-import { getActiveTheme } from 'src/selectors/user';
+import { getActiveTheme } from 'appSelectors/user';
 import { changeTheme } from 'appActions/user';
 
 const ThemeSwitch = () => {

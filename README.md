@@ -47,6 +47,7 @@ The feature requested may be straightforward, but my goal is to project this fea
  - **Material-UI**: For CSS-In-JS, Theme management, Responsiveness, and Re-usable UI Components. **Note**: Except for *TextField* Search Input, rest of the UI components have been developed in this application. A larger application always uses a design system underneath and every design system (bootstrap, ANT, Material-ui etc)  has helper libraries to manage boilerplate. I've documented under-the-hood implementations of these helper utils as a means to communicate I'm well aware of these concepts but just not reinventing the wheel at the moment. 
  -  **Axios**: For ajax
  - **Reselect**: Selector Library for memoization.
+ - **redux-actions**: For Enforcing FSA Compliance in redux actions.
  - **babel/plugin-proposal-export-default-from**: For `export x from 'y';`
  -  **babel/plugin-proposal-async-generator-functions**: For `async await` in older browsers.
  - **React Testing Library + Jest**
@@ -62,5 +63,10 @@ The feature requested may be straightforward, but my goal is to project this fea
  - **Just JSON Files for persistence layer**: Well, I could go all the way with PSQL/MongoDB etc, but should I? Please let me know.
 
 ## Frontend Architecture
+
+**From Root to to a page route:**
 <img src="./readmeAssets/FA-1.png?raw=true" alt="preview" width="500"/>
 
+
+**Directory Structure**
+<img src="./readmeAssets/FA-2.png?raw=true" alt="preview" />

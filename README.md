@@ -1,5 +1,6 @@
 # Player Archive!
 
+<img src="./readmeAssets/preview.png?raw=true" alt="preview" width="300"/>
 
 ![Preview 1](./readmeAssets/preview.png?raw=true)
 ![Preview 2](./readmeAssets/preview-2.png?raw=true)

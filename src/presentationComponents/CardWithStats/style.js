@@ -5,7 +5,7 @@ export default (theme)=>({
     padding: theme.spacing(2),
     maxWidth: 400,
     height: 500,
-    backgroundColor: (console.log(theme),theme.palette.background.paper),
+    backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[1],
     ...theme.flexboxes.horizontallyCentered,
     [theme.breakpoints.between('xs', 'sm')]: {

@@ -20,7 +20,6 @@ const Typography = (props) => {
 Typography.displayName = 'Typography'
 Typography.propTypes = {
   weight: PropTypes.oneOf(['regular','medium','bold']),
-  children: PropTypes.element
 }
 
 export default Typography;

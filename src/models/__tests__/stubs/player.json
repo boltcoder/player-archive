@@ -1,0 +1,12 @@
+{
+  "id": "ronaldo",
+  "active": true,
+  "name": "Christiano Ronaldo",
+  "age": 36,
+  "role": "Forward",
+  "team": "Juventus F.C.",
+  "goals": 780,
+  "games": 1070,
+  "location": "Portugal",
+  "red_cards": 11
+}

@@ -24,6 +24,7 @@ module.exports = babelJest.createTransformer({
       },
     ],
   ],
+  plugins:[require.resolve('@babel/plugin-proposal-export-default-from')],
   babelrc: false,
   configFile: false,
 });

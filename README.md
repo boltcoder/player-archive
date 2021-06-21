@@ -35,7 +35,7 @@ The feature requested may be straightforward, but my goal is to project this fea
  - Alternatively 💅, `npm run frontend` for frontend and `npm run backend` for backend.
  - **Frontend** : `http://localhost:3000` 
  - **Backend** : `http://localhost:3001` 
- - Data can be looked up [here]('./server/data/player');
+ - Data can be looked up [here]('./server/data/player.json')
 
 
 

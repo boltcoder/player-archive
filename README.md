@@ -29,7 +29,7 @@ The feature requested may be straightforward, but my goal is to project this fea
 ## How to run the application(s)
 
  - Please use node `v12.19.0` and npm `v6.14.8`. I could have shipped a docker image but ... ☕.
- - Clone the repo of course 😉
+ - Clone the repo of course and `cd path/to/repo` 😉
  - `npm i` 
  - `npm run fullstack` to fire off both frontend and backend concurrently. (I used `concurrently` npm package).
  - Alternatively 💅, `npm run frontend` for frontend and `npm run backend` for backend.

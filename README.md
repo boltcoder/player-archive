@@ -36,6 +36,7 @@ The feature requested may be straightforward, but my goal is to project this fea
  - **Frontend** : `http://localhost:3000` 
  - **Backend** : `http://localhost:3001` 
  - Data can be looked up [here](./server/data/player.json)
+ - `npm run test` for all unit test
 
 
 

@@ -10,7 +10,6 @@
     "@svgr/webpack": "5.5.0",
     "@testing-library/jest-dom": "5.11.4",
     "@testing-library/react": "11.1.0",
-    "@testing-library/user-event": "12.1.10",
     "@typescript-eslint/eslint-plugin": "^4.5.0",
     "@typescript-eslint/parser": "^4.5.0",
     "axios": "^0.21.1",
@@ -83,7 +82,7 @@
     "fullstack": "concurrently --kill-others \"npm run frontend\" \"npm run backend\"",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "./node_modules/.bin/jest"
   },
   "eslintConfig": {
     "extends": [
@@ -162,11 +161,13 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-export-default-from": "^7.14.5",
+    "@testing-library/user-event": "^12.1.10",
     "compression": "^1.7.4",
     "concurrently": "^6.2.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "http-status": "^1.5.0",
+    "user-event": "^4.0.0",
     "winston": "^3.3.3"
   }
 }

@@ -7,8 +7,8 @@ const middlewares = [promiseMiddleware];
 const store = createStore(
   reducers,
   // initialReduxState,
-  compose(applyMiddleware(...middlewares), window.__REDUX_DEVTOOLS_EXTENSION__()),
-  // applyMiddleware.apply(this, middlewares),
+  // compose(applyMiddleware(...middlewares), window.__REDUX_DEVTOOLS_EXTENSION__()), // if you have devtools extensions enable this 
+  applyMiddleware.apply(this, middlewares),
 );
 
 

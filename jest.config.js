@@ -10,6 +10,7 @@ module.exports = {
   moduleNameMapper       : {
     'appActions/(.*)$': '<rootDir>/src/redux/actions/$1',
     'appReducers/(.*)$': '<rootDir>/src/redux/reducers/$1',
+    'appReducers': '<rootDir>/src/redux/reducers/index.js',
     'appSelectors/(.*)$': '<rootDir>/src/redux/selectors/$1',
     'appRedux/(.*)$': '<rootDir>/src/redux/$1',
     'appSmartComponents/(.*)$': '<rootDir>/src/smartComponents/$1',
@@ -20,8 +21,9 @@ module.exports = {
     'appUtils/(.*)$': '<rootDir>/src/utils/$1',
     'appConstants/(.*)$': '<rootDir>/src/constants/$1',
     'appContainers/(.*)$': '<rootDir>/src/containers/$1',
+    'appContainers': '<rootDir>/src/containers/index.jsx',
     'appHooks/(.*)$': '<rootDir>/src/hooks/$1',
-    'appConfig/(.*)$': '<rootDir>/src/config/$1',
+    'appConfig': '<rootDir>/src/config.js',
     
   },
   

@@ -23,7 +23,7 @@ const TextInput = (props)=> {
   if(debounce){
     onTextFieldChange = debounceUtil(onTextFieldChange,time);
   }
-  return <TextField onChange={onTextFieldChange} {...restProps} />;
+  return <TextField onChange={onTextFieldChange} {...restProps} inputProps={{role:"input"}} />;
 
 }
 

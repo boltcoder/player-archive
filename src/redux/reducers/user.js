@@ -1,5 +1,5 @@
 import { handleActions } from 'redux-actions';
-import THEME_TYPES from 'src/constants/themeTypes';
+import THEME_TYPES from 'appConstants/themeTypes';
 import { 
   CHANGE_THEME
  } from 'appRedux/actionTypes';

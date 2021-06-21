@@ -4,10 +4,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getPlayerById } from 'appSelectors/player';
 
 
+// reusable hook to read stale-while-revalidate data of a player.
 const useCacheFirstPlayerById = (id) => {
   const dispatch = useDispatch();
+
   const [loading, setLoading] = useState(false);
+
   const player = useSelector((state)=>getPlayerById(state,id));
+  
   useEffect(()=> {
     (async ()=>{
       setLoading(true);

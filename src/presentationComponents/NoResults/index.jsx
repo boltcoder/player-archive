@@ -1,7 +1,10 @@
 
 import NotFoundImage from './notFound.png'
+import PropTypes from 'prop-types';
 import { Typography, Image } from 'appPresentationComponents';
 import { Grid } from '@material-ui/core';
+
+
 const NoResults = (props) => {
   const {
     title,
@@ -18,5 +21,9 @@ const NoResults = (props) => {
   
 }
 
+NoResults.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
+}
 NoResults.displayName = NoResults;
 export default NoResults;

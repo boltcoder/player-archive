@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+import PropTypes from 'prop-types'
 import stylesheet from './style';
 import { Typography } from 'appPresentationComponents';
 const useStyles = makeStyles(stylesheet);
@@ -18,4 +19,8 @@ const Stats = (props) => {
 };
 
 Stats.displayName = 'Stats';
+Stats.propTypes = {
+  label: PropTypes.oneOf([PropTypes.string,PropTypes.number,PropTypes.element]),
+  value: PropTypes.oneOf([PropTypes.string,PropTypes.number,PropTypes.element]),
+}
 export default Stats;

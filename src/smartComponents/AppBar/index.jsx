@@ -14,7 +14,6 @@ const AppBar = () => {
           <ThemeSwitch></ThemeSwitch>
         </div>
       </div>
-      
     </div>
   );
 }

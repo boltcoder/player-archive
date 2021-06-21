@@ -1,7 +1,9 @@
 const winston = require('winston');
 
-const errorFormat = winston.format((error)=> error instanceof Error ? Object.assign(info, { message: info.stack }) : error);
+// print full error stack
+const errorFormat = winston.format((error)=> error instanceof Error ? Object.assign(error, { message: error.stack }) : error);
 
+// only a single instance of winston should do
 const logger = winston.createLogger({
   level: 'debug',
   format: winston.format.combine(
@@ -11,7 +13,7 @@ const logger = winston.createLogger({
     winston.format.printf(({ level, message }) => `${level}: ${message}`)
   ),
   transports: [
-    new winston.transports.Console({
+    new winston.transports.Console({ // for now let's just Console.
       stderrLevels: ['error'],
     }),
   ],

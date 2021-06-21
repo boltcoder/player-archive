@@ -1,4 +1,5 @@
 import { Provider } from 'react-redux';
+import PropTypes from 'prop-types';
 import store from 'appRedux/configureStore';
 
 const ReduxProvider = (props)=>{
@@ -9,5 +10,7 @@ const ReduxProvider = (props)=>{
 }
 
 ReduxProvider.displayName='ReduxProvider';
-
+ReduxProvider.propTypes = {
+  children: PropTypes.element,
+}
 export default ReduxProvider;

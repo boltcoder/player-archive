@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const Image = (props) => {
 const {
   alt,
@@ -9,5 +10,9 @@ if(!alt){
 }
 return <img src={src} alt={alt} {...restProps}></img>
 };
+Image.propTypes = {
+  alt: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+}
 Image.displayName = 'Image';
 export default Image;

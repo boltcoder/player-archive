@@ -1,7 +1,5 @@
 import ReduxProvider from "appSmartComponents/ReduxProvider";
 import MUIProvider from "appSmartComponents/MUIProvider";
-
-
 import Container from 'appContainers';
 
 

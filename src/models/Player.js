@@ -35,9 +35,8 @@ class Player {
   
   formatInfoForCard() {
     return {
-      name: this.getName(),
-      role: this.getRole(),
-      active: this.getActive(),
+      title: this.getName(),
+      subtitle: this.getRole(),
       stats: [
         {
           label: "Team",

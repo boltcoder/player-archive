@@ -2,6 +2,7 @@
 import {
   TextField
 } from '@material-ui/core';
+import PropTypes from 'prop-types'
 import noop from 'appUtils/noop';
 import debounceUtil from 'appUtils/debounce';
 
@@ -27,4 +28,13 @@ const TextInput = (props)=> {
 }
 
 TextInput.displayName = 'TextInput';
+TextInput.propTypes = {
+  onChange: PropTypes.func,
+  debounce: PropTypes.bool,
+  debounceOptions: PropTypes.objectOf(PropTypes.shape({
+    time: PropTypes.number,
+  })),
+  
+}
+
 export default TextInput;

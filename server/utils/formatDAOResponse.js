@@ -1,6 +1,7 @@
 const DAO_STATUS  = require('./daoStatus');
 const httpStatus = require('http-status');
 
+// helper util to just format a DAO's response into Node Response Object
 const formatDAOResponse = (daoResponse={}, res) => {
   const {
     status,

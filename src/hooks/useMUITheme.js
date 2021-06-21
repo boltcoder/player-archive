@@ -5,9 +5,13 @@ import { getActiveTheme } from 'appSelectors/user';
 import { changeTheme } from 'appActions/user';
 import getTheme from 'appUtils/getTheme';
 import THEME_TYPES from 'appConstants/themeTypes';
+
 const useMUITheme = ()=> {
+
   const dispatch = useDispatch();
+
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  
   const themeType = useSelector(getActiveTheme);
 
   const setTheme = useCallback((themeType) => {

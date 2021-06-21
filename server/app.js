@@ -20,7 +20,7 @@ app.use(cors());
 app.options('*', cors());
 
 
-// v1 api routes
+// Api routes
 app.use('/', routes);
 
 

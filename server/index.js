@@ -2,14 +2,15 @@ const app = require('./app');
 const config = require('./config');
 const logger = require('./utils/logger');
 
-
+// start the app and listen on port as per config
 const server = app.listen(config.PORT, () => {
-  logger.info("Listening on port", config.PORT );
+  logger.info(`Listening on port : ${config.PORT}`);
 });
 
-
+// handle global exception
+// in an ideal world, I'd be using PM2 for auto restart
 const handleException = (error) => {
-  console.log(error);
+  logger.error(error);
   if (server) {
     server.close(() => {
       logger.info("Closed server");
@@ -20,6 +21,7 @@ const handleException = (error) => {
   }
 };
 
+// handle global exceptions 
 process.on('unhandledRejection', handleException);
 process.on('uncaughtException', handleException);
 

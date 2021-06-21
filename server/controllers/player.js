@@ -1,3 +1,8 @@
+/**
+ * Top level controllers mapped 1 to 1 with route. the node's response and request object should not traverse farther than this.
+ * Controllers drive an imperative order to using these models, collect data and prepare a suitable RESTful response.
+ * 
+ */
 const playerDAO = require('../dao/player');
 const formatDAOResponse = require('../utils/formatDAOResponse');
 

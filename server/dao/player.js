@@ -2,6 +2,9 @@ const readJsonFile = require('../utils/readJsonFile');
 const DAO_STATUS = require('../utils/daoStatus');
 const path = require('path');
 
+// Player's Data Access Object
+
+// only sends back whether the player in the archive is active or inactive
 const getAvailabilityById = async (id) => {
   try {
     const allPlayersArchive = await readJsonFile(path.resolve('./server/data/player.json'));
@@ -24,9 +27,10 @@ const getAvailabilityById = async (id) => {
   }
 }
 
-const getDataByJsonFileName = async (jsonFileName) => {
+// sends back data profile of player
+const getDataByJsonFileName = async (playerId) => {
   try {
-    const player = await readJsonFile(path.resolve(`./server/data/${jsonFileName}.json`));
+    const player = await readJsonFile(path.resolve(`./server/data/${playerId}.json`));
     if(!player) {
       return {
         data: null,

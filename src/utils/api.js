@@ -1,12 +1,13 @@
 import axios from 'axios';
 import { API_HOST } from 'appConfig';
 
-export const CancelToken = axios.CancelToken;
-
+// pre-configure axios' instance with api host
 const api = axios.create({
   baseURL         : `${API_HOST}/`,
   withCredentials : false,
 });
+
+// format all api 200 OK response in a uniform way
 api.interceptors.response.use((response) => {
   return Promise.resolve({
     response: response.data,
@@ -15,7 +16,11 @@ api.interceptors.response.use((response) => {
   });
 
 }, (error) => {
+
+  // format all api error response in a uniform way
+  // segregate unexpected errors (network/client timeout. These errors occur client side in network fetch) from errors sent from backend. 
   const unexpected = !error.response || !error.response.data;
+  
   if(unexpected) {
     return Promise.reject({
       response: "Something went wrong, Please try again",
@@ -25,7 +30,7 @@ api.interceptors.response.use((response) => {
     });
   } else {
       
-      // handle graceful errors on frontend
+      // handle graceful errors sent from backend. 
       return Promise.resolve({
         response: error.response.data,
         httpStatus: error.response.status,
